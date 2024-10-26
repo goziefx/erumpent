@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Responsive Div</title> 
+    <style> 
+        #myImg {
+            display: none;
+        }
+    </style> 
+</head> 
+<body> 
+    <button id="myButton">Click me</button>
+
+    <div id="myImg">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, repellendus?</p>
+        <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam, nesciunt.</h4>
+    </div>
+
+
+
+    <script>
+     let myButton = document.getElementById("myButton");
+     let myImg = document.getElementById("myImg");
+
+     myButton.addEventListener("click", event => {
+
+        if(myImg.style.display === "block"){
+            myImg.style.display = "none"
+        }
+        else{
+            myImg.style.display = "block";
+        }
+
+     })
+    </script>
+</body> 
+</html>
